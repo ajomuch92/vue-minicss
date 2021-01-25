@@ -5,19 +5,19 @@ import mDrawer from './components/Drawer/m-drawer';
 import mSpinner from './components/Spinner/m-spinner';
 import mProgressBar from './components/ProgressBar/m-progress-bar';
 import mHighLight from './components/Highlight/m-highlight';
-import mTooltip from './components/Tooltip/m-tooltip';
-import mButton from './components/Buttons/m-button';
-import mToast from './components/Toast/m-toast';
-import MFieldset from './components/Inputs/m-fieldset.vue';
-import MIcon from './components/Icons/m-icon.vue';
-import MDropdown from './components/Dropdown/m-dropdown.vue';
-import MTable from './components/Table/m-table.vue';
-import MAccordion from './components/Accordion/m-accordion.vue';
-import MInput from './components/Inputs/m-input.vue';
-import MTabs from './components/Tabs/m-tabs.vue';
+import mTooltip from './src/components/Tooltip/m-tooltip';
+import mButton from './src/components/Buttons/m-button';
+import mToast from './src/components/Toast/m-toast';
+import MFieldset from './src/components/Inputs/m-fieldset';
+import MIcon from './src/components/Icons/m-icon';
+import MDropdown from './src/components/Dropdown/m-dropdown';
+import MTable from './src/components/Table/m-table';
+import MAccordion from './src/components/Accordion/m-accordion';
+import MInput from './src/components/Inputs/m-input';
+import MTabs from './src/components/Tabs/m-tabs';
 
-module.exports = {
-  install: function (Vue) {
+export default  {
+  install(Vue) {
     Vue.component('m-header', mHeader);
     Vue.component('m-drawer', mDrawer);
     Vue.component('m-spinner', mSpinner);
