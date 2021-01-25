@@ -1,0 +1,30 @@
+{
+  "name": "vue-minicss",
+  "version": "1.0.0",
+  "description": "A components progressive library base on Minicss.org for Vuejs",
+  "main": "dist/vue-minicss.js",
+  "scripts": {
+    "build": "rimraf ./dist && webpack --config ./webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajomuch92/vue-minicss.git"
+  },
+  "keywords": [
+    "mini.css",
+    "vuejs",
+    "library",
+    "components"
+  ],
+  "author": "Aarón Montes",
+  "license": "MIT",
+  "dependencies": {
+    "feather-icons": "^4.28.0",
+    "mini.css": "^3.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/ajomuch92/vue-minicss/issues"
+  },
+  "homepage": "https://github.com/ajomuch92/vue-minicss#readme"
+}
