@@ -1,10 +1,10 @@
 import 'mini.css';
 
-import mHeader from './components/Header/m-header';
-import mDrawer from './components/Drawer/m-drawer';
-import mSpinner from './components/Spinner/m-spinner';
-import mProgressBar from './components/ProgressBar/m-progress-bar';
-import mHighLight from './components/Highlight/m-highlight';
+import mHeader from '../components/Header/m-header';
+import mDrawer from '../components/Drawer/m-drawer';
+import mSpinner from '../components/Spinner/m-spinner';
+import mProgressBar from '../components/ProgressBar/m-progress-bar';
+import mHighLight from '../components/Highlight/m-highlight';
 import mTooltip from '../src/components/Tooltip/m-tooltip';
 import mButton from '../src/components/Buttons/m-button';
 import mToast from '../src/components/Toast/m-toast';
