@@ -5,16 +5,16 @@ import mDrawer from './components/Drawer/m-drawer';
 import mSpinner from './components/Spinner/m-spinner';
 import mProgressBar from './components/ProgressBar/m-progress-bar';
 import mHighLight from './components/Highlight/m-highlight';
-import mTooltip from './src/components/Tooltip/m-tooltip';
-import mButton from './src/components/Buttons/m-button';
-import mToast from './src/components/Toast/m-toast';
-import MFieldset from './src/components/Inputs/m-fieldset';
-import MIcon from './src/components/Icons/m-icon';
-import MDropdown from './src/components/Dropdown/m-dropdown';
-import MTable from './src/components/Table/m-table';
-import MAccordion from './src/components/Accordion/m-accordion';
-import MInput from './src/components/Inputs/m-input';
-import MTabs from './src/components/Tabs/m-tabs';
+import mTooltip from '../src/components/Tooltip/m-tooltip';
+import mButton from '../src/components/Buttons/m-button';
+import mToast from '../src/components/Toast/m-toast';
+import MFieldset from '../src/components/Inputs/m-fieldset';
+import MIcon from '../src/components/Icons/m-icon';
+import MDropdown from '../src/components/Dropdown/m-dropdown';
+import MTable from '../src/components/Table/m-table';
+import MAccordion from '../src/components/Accordion/m-accordion';
+import MInput from '../src/components/Inputs/m-input';
+import MTabs from '../src/components/Tabs/m-tabs';
 
 export default  {
   install(Vue) {
