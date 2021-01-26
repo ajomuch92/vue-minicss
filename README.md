@@ -20,7 +20,8 @@ Vue.use(VueMiniCss);
 ```
 
 __Support me to improve and maintain this library. My first month goal is only $50:__ 
-<br /><br/><a href="https://www.buymeacoffee.com/ajomuch92" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+<br />
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ajomuch92" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
 ### License
 MIT
