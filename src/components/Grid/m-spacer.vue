@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .m-spacer {
     flex-grow: 1 !important;
   }

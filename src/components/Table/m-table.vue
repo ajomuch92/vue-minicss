@@ -134,7 +134,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .dense td, .dense th{
     padding: calc(var(--universal-padding) / 2) calc(var(--universal-padding)) !important;
   }

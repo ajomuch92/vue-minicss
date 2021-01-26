@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .toast {
     min-width: 250px;
     text-align: center;

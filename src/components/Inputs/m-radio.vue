@@ -77,7 +77,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   [type="radio"] {
     vertical-align: middle !important;
   }

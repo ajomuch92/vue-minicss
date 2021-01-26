@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .m-dropdown {
     position: relative;
     display: inline-block;

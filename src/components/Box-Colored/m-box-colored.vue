@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .box-colored {
     background: #0277bd;
     border-radius: 0.125rem;

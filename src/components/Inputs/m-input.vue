@@ -96,7 +96,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .invalid {
     border-color: var(--input-invalid-color);
     box-shadow: none;

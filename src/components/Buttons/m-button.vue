@@ -105,7 +105,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .m-button {
     transition: all 0.5s;
   }

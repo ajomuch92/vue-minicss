@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .m-tabs-container {
     padding: 0px 16px;
     width: 98%;

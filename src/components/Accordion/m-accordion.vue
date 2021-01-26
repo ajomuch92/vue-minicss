@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .card {
     width: 99%;
     max-width: 100%;

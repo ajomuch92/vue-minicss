@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .overlay {
     position: fixed;
     width: 100%;

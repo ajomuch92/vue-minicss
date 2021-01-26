@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>  
+<style lang="scss" scoped>  
   .m-parallax {
     background-attachment: fixed;
     background-position: center;
