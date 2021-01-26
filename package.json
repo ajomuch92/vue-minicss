@@ -1,6 +1,6 @@
 {
   "name": "vue-minicss",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A components progressive library base on Minicss.org for Vuejs",
   "main": "./dist/vue-minicss.common.js",
   "files": [

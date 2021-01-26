@@ -19,8 +19,8 @@ Vue.use(VueMiniCss);
 ...
 ```
 
-__Support me to improve and maintain this library:__ 
-<a href="https://www.buymeacoffee.com/ajomuch92" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+__Support me to improve and maintain this library. My first month goal is only $50:__ 
+<br /><br/><a href="https://www.buymeacoffee.com/ajomuch92" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 ### License
 MIT
