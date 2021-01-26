@@ -1,6 +1,6 @@
 {
   "name": "vue-minicss",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A components progressive library base on Minicss.org for Vuejs",
   "main": "./dist/vue-minicss.common.js",
   "files": [
@@ -35,16 +35,16 @@
   },
   "homepage": "https://github.com/ajomuch92/vue-minicss#readme",
   "dependencies": {
-    "core-js": "^3.6.5",
     "feather-icons": "^4.28.0",
-    "mini.css": "^3.0.1",
-    "vue": "^2.6.11"
+    "mini.css": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-plugin-eslint": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
     "@vue/compiler-sfc": "^3.0.5",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
