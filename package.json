@@ -1,11 +1,19 @@
 {
   "name": "vue-minicss",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A components progressive library base on Minicss.org for Vuejs",
-  "main": "dist/vue-minicss.js",
+  "main": "./dist/vue-minicss.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
-    "build": "rimraf ./dist && webpack --config ./webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build-bundle": "vue-cli-service build --target lib --name vue-minicss ./src/index.js",
+    "lint": "vue-cli-service lint --fix"
   },
   "repository": {
     "type": "git",
@@ -14,17 +22,46 @@
   "keywords": [
     "mini.css",
     "vuejs",
+    "minicss",
+    "vuemini",
+    "vue-mini",
     "library",
     "components"
   ],
   "author": "Aarón Montes",
   "license": "MIT",
-  "dependencies": {
-    "feather-icons": "^4.28.0",
-    "mini.css": "^3.0.1"
-  },
   "bugs": {
     "url": "https://github.com/ajomuch92/vue-minicss/issues"
   },
-  "homepage": "https://github.com/ajomuch92/vue-minicss#readme"
+  "homepage": "https://github.com/ajomuch92/vue-minicss#readme",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "feather-icons": "^4.28.0",
+    "mini.css": "^3.0.1",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^10.1.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add",
+      "git commit"
+    ]
+  }
 }
