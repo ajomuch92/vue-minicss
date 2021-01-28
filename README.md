@@ -3,10 +3,6 @@
 ## A components progressive library base on [minicss.org](https://minicss.org/) for Vuejs. 
 The rest of documentation and demo is coming. And best components could come.
 
-**Content**
-
-[TOC]
-
 # Instalation
 
 NPM:  
