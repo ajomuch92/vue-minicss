@@ -6,7 +6,9 @@ The rest of documentation and demo is coming. And best components could come.
 **Content**
 
 [TOC]
-#Instalation
+
+# Instalation
+
 NPM:  
 ```bash
 npm install --save vue-minicss
@@ -21,9 +23,12 @@ import VueMiniCss 'vue-minicss';
 Vue.use(VueMiniCss);
 ...
 ```
-#Components
+# Components
+
 **Note**: All the components can receive the class, style or id as props.
-##Accordion
+
+## Accordion
+
 A component to show expandables items.
 **Usage**
 ```html
@@ -46,16 +51,20 @@ A component to show expandables items.
 |  *name* or *label* |  Slots with the name or label of the item to customize the item shown when expand |
 
 
-##Box Colored
+## Box Colored
+
 A component to display a blue box that occupies the entire available width.
+
 **Usage**
+
 ```html
 ...
 <m-box-colored  />
 ...
 ```
 
-##Button
+## Button
+
 Component to render a clickable button
 
 **Usage**
@@ -96,9 +105,10 @@ Component to render a clickable button
 | ------------ | ------------ |
 |  Click |  Event triggered when click |
 
-##Cards
+## Cards
 
-###Card Section
+### Card Section
+
 Component to use into cards to separate content.
 
 **Usage**
@@ -116,7 +126,8 @@ Component to use into cards to separate content.
 | ------------ | ------------ |
 |  Default |  Slot by default |
 
-###Card
+### Card
+
 Component to render a card.
 
 **Usage**
@@ -142,7 +153,9 @@ Component to render a card.
 |  Name | Description   |
 | ------------ | ------------ |
 |  Default |  Slot by default |
-##Drawer
+
+## Drawer
+
 Component to show a drawer and its button into the screen.
 
 **Usage**
@@ -167,7 +180,9 @@ Component to show a drawer and its button into the screen.
 |  Name | Description   |
 | ------------ | ------------ |
 |  Default |  Slot by default |
-##Dropdown
+
+## Dropdown
+
 Component to show a dropdown menu over a component.
 
 **Usage**
@@ -195,9 +210,13 @@ Component to show a dropdown menu over a component.
 | ------------ | ------------ |
 |  Default |  Slot by default |
 |  dropdown |  Slot to place the body of dropdown menu |
-##Grid
-##Header & Footer
-###Header
+
+## Grid
+
+## Header & Footer
+
+### Header
+
 Component to show a header navbar.
 
 **Usage**
@@ -226,7 +245,8 @@ Component to show a header navbar.
 |  Default |  Slot by default |
 |  logo |  Slot to place a logo on header |
 
-###Footer
+### Footer
+
 Component to show a footer bar.
 
 **Usage**
@@ -250,7 +270,9 @@ Component to show a footer bar.
 |  Name | Description   |
 | ------------ | ------------ |
 |  Default |  Slot by default |
-##Highlight
+
+## Highlight
+
 Component to higlight a component (usually text).
 
 **Usage**
@@ -276,7 +298,9 @@ Component to higlight a component (usually text).
 |  Name | Description   |
 | ------------ | ------------ |
 |  Default |  Slot by default |
-##Icons
+
+## Icons
+
 Component to show an icon. Its's based on Feather Icons. You can find the whole list of icons [here](https://feathericons.com/ "here").
 
 **Usage**
@@ -298,9 +322,13 @@ Component to show an icon. Its's based on Feather Icons. You can find the whole 
 |  color | String (with an hexadecimal value) to indicate the icon color | False   |  #000000  |
 
 ##Images
-##Inputs
-##Modals
-##ProgressBar
+
+## Inputs
+
+## Modals
+
+## ProgressBar
+
 Component to show a progress bar.
 ```html
 ...
@@ -318,7 +346,8 @@ Component to show a progress bar.
 | value  | String or integer number to indicate the progress bar value | False   |   0 |
 | max  | String or integer number to indicate the max value for progress bar | False   |   100 |
 
-##Spinner
+## Spinner
+
 Component to show a loading spinner icon
 **Usage**
 ```html
@@ -334,7 +363,8 @@ Component to show a loading spinner icon
 | ------------ | ------------ | ------------ | ------------ |
 | color  | String to set button color. Values allowed are primary, secondary or tertiary | False   |    |
 
-##Table
+## Table
+
 Component to show a table
 
 **Usage**
@@ -376,7 +406,9 @@ Component to show a table
 |  Name | Description   |
 | ------------ | ------------ |
 |  item-click |  Event triggered when click on a row and it's selectable|
-##Tabs
+
+## Tabs
+
 Component to render a card.
 
 **Usage**
@@ -411,7 +443,8 @@ Component to render a card.
 
 Note: You can use v-model with this component.
 
-##Toast
+## Toast
+
 Component to show a toast message on screen bottom
 **Usage**
 ```html
@@ -443,7 +476,9 @@ Note: You can use v-model with this component.
 |  Name | Description   |
 | ------------ | ------------ |
 |  Default |  Slot by default |
-##Tooltip
+
+## Tooltip
+
 Component to show a tooltip when pass over a HTML element or component
 
 **Usage**
@@ -469,7 +504,8 @@ Component to show a tooltip when pass over a HTML element or component
 | ------------ | ------------ |
 |  Default |  Slot by default |
 
-##Author
+## Author
+
 This library is created by [Aarón Montes](https://github.com/ajomuch92 "Aarón Montes"). **Support me to improve and maintain this library. My first month goal is only $50:**
 <a href="https://www.buymeacoffee.com/ajomuch92" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
