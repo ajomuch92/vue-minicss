@@ -1,7 +1,12 @@
 # Vue Minicss
-
+![alt Vue Minicss Logo](https://i.ibb.co/bgjC8Tf/Grupo-1.png)
 ## A components progressive library base on [minicss.org](https://minicss.org/) for Vuejs. 
-The rest of documentation and demo is coming. And best components could come.
+The demo is coming. And best components and features could come. Feel free to make a pull request or let me know when you find a bug.
+
+## Author
+
+This library is created by [Aarón Montes](https://github.com/ajomuch92 "Aarón Montes"). **Support me to improve and maintain this library. My first month goal is only $50:**
+<a href="https://www.buymeacoffee.com/ajomuch92" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 # Instalation
 
@@ -209,6 +214,70 @@ Component to show a dropdown menu over a component.
 
 ## Grid
 
+### Contanier
+Component to define a default container
+
+**Usage**
+```html
+...
+<m-container>
+	...
+</m-container>
+...
+```
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
+### Row
+Use to define a new row on a grid design
+
+**Usage**
+```html
+...
+<m-row>
+	...
+</m-row>
+...
+```
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
+### Cols
+Use to define a new column on a grid design
+
+**Usage**
+```html
+...
+<m-col>
+	...
+</m-col>
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  sm |   String or integer number to indicate the number of row on a small screen | False   |   |
+|  md |   String or integer number to indicate the number of row on a medium screen | False   |   |
+|  lg |   String or integer number to indicate the number of row on a large screen | False   |   |
+|  smOffset |   String or integer number to indicate the offset for a row on a small screen | False   |   |
+|  mdOffset |   String or integer number to indicate the offset for a row on a medium screen | False   |   |
+|  lgOffset |   String or integer number to indicate the offset for a row on a large screen | False   |   |
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
 ## Header & Footer
 
 ### Header
@@ -317,11 +386,368 @@ Component to show an icon. Its's based on Feather Icons. You can find the whole 
 |  height | Integer number to indicate the icon height | False   |  24  |
 |  color | String (with an hexadecimal value) to indicate the icon color | False   |  #000000  |
 
-##Images
+## Images
+
+### Images
+Component to show images
+
+**Usage**
+```html
+...
+<m-image :src="src">
+	...
+</m-image>
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  src |   String to indicate the source of the image | True   |   |
+|  alt |   String to define an alternative text for the image | False   |   |
+|  caption |   String to define a footer image text | False   |   |
+|  innerClass |   String to define a class for the image HTML tag inside the component | False   |   |
+|  width |   String or integer number to indicate the image width | False   |  240 |
+|  height |   String or integer number to indicate the image height | False   |  240 |
+
+### Hoverable Images
+Component to show images and show and opacity when hover it.
+
+**Usage**
+```html
+...
+<m-hoverable-image :src="src">
+	...
+</m-hoverable-image>
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  src |   String to indicate the source of the image | True   |   |
+|  alt |   String to define an alternative text for the image | False   |   |
+|  innerClass |   String to define a class for the image HTML tag inside the component | False   |   |
+|  width |   String or integer number to indicate the image width | False   |  240 |
+|  height |   String or integer number to indicate the image height | False   |  240 |
+|  bodyColor |   String with an hexadecimal to indicate the body color when hover | False   |  transparent |
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
+### Parallax
+Component to show images and show and opacity when hover it.
+
+**Usage**
+```html
+...
+<m-parallax :src="src" />
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  src |   String to indicate the source of the image | True   |   |
+|  height |   String to define the parallax height | False   |   |
+
 
 ## Inputs
 
+### Fieldset
+Component to render a frame around other elements.
+
+**Usage**
+```html
+...
+<m-fieldset>
+...
+</m-fieldset>
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  Legend |   String to put a legend or title for the frame | True   |   |
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
+### Checkbox
+Componente to show a checkbox.
+
+**Usage**
+```html
+...
+<m-checkbox v-model="value" :label="label">
+...
+</m-checkbox>
+...
+```
+
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  value |   String to indicate when the checkbox is cheked | False   |   |
+|  label |   String to define the checkbox label | False   |   |
+|  disabled |   Boolean to indicate when the checkbox is disabled | False   |  false |
+|  form |   String to indicate the name of the form to which it belongs| False   |   |
+|  name |   String to indicate the name for checkbox | False   |   |
+|  readonly |  Boolean to indicate when the checkbox is readonly | False   |  false |
+|  invalid |   Boolean value that indicates when the control value is invalid or required | False   |  false |
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  input |  Event triggered when the checkbox value changed|
+
+Note: You can use v-model with this component.
+
+### File
+Component to show a button and select a file from a prompt
+
+**Usage**
+```html
+...
+<m-file v-model="value" />
+...
+```
+
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  id |   String to indicate the unique identifier for the component | True   |   |
+|  value |   String used by v-model directive to pass the base64 file string | False   |   |
+|  showLabel |   Boolean to indicate when to show the name of file selected| False   |  false |
+|  accept |   String to indicate the file extensions for input| False   |   |
+|  small |   String to indicate when the button is small or not | False   |  true |
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  input |  Event triggered when select a file |
+
+Note: You can use v-model with this component.
+
+### Input
+Component to show a input or textbox
+
+**Usage**
+```html
+...
+<m-input v-model="value" />
+...
+```
+
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  value |   String or number to indicate the input value | False   |   |
+|  type |   String to indicate the input type. Allowed values are text, number, email, search, password, tel and url | True   |   |
+|  disabled |   Boolean to indicate when the input is disable | False   |  false |
+|  form |  String to indicate the name of the form to which it belongs | False   |   |
+|  max |   String or integer number to indicate the maximun for inputs type number | False   |  |
+|  maxlength |  String or integer number to specify the maximum number of characters allowed on input | False   |   |
+|  min |   String or integer number to indicate the minimum for type number  | False   |   |
+|  minlength |   String or integer number to specify the minimum number of characters allowed on input | True   |   |
+|  name |   String to specify the name of the input | False   |   |
+|  pattern |   Regex used the validate the input value when submit | False   |   |
+|  placeholder |   String to specify a short hint that describes the expected value of the input| False   |   |
+|  readonly |   Boolean to indicate when the input is readonly | False   |   |
+|  step |  String or integer number to specify the interval between legal numbers on input| False   |   |
+|  invalid |   Boolean value that indicates when the control value is invalid or required. Put a red border around input | False   |   |
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  blur |  Event triggered when input lost focus |
+|  change |  Event triggered when input changes its value |
+|  focus |  Event triggered when input got focus  |
+|  keydown |  Event triggered when you press a key down |
+|  keypress |  Event triggered when you press a key |
+|  keyup |  Event triggered when you release a key |
+|  click |  Event triggered when you click on input |
+|  input |  Event triggered when input value changes |
+
+Note: You can use v-model with this component.
+
+### Radio
+Component to show inputs type radio
+
+**Usage**
+```html
+...
+<m-radio v-model="value" :items="items" />
+...
+```
+
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  value |   String or number to indicate the input value | False   |   |
+| items  | Array of object containing the items to render for radios.  E.g. [{id: 'id', label': 'label', value: 'value'},...]  | True   |    |
+|  disabled |   Boolean to indicate when the radios are disable | False   |  false |
+|  readonly |   Boolean to indicate when the radios are readonly | False   |  false |
+|  invalid |   Boolean value that indicates when the control value is invalid or required. Put a red border around input | False   |   false|
+|  vertical |   Boolean value to indicate when the input radios are shown vertically | False   |  false |
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  change |  Event triggered when checkbox changes its value |
+|  input |  Event triggered when checkbox changes its value |
+
+Note: You can use v-model with this component.
+
+### Select
+Component to show select control
+
+**Usage**
+```html
+...
+<m-select v-model="value" :options="items" />
+...
+```
+
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  value |   String or number to indicate the input value | False   |   |
+| options  | Array of object containing the items for select options.  E.g. [{ label': 'label', value: 'value'},...]  | True   |    |
+|  disabled |   Boolean to indicate when the select control is disable | False   |  false |
+|  form |  String to indicate the name of the form to which it belongs | False   |   |
+|  name |   String to specify the name of the select control | False   |   |
+|  readonly |   Boolean to indicate when the select control is readonly | False   |  false |
+|  invalid |   Boolean value that indicates when the control value is invalid or required. Put a red border around input | False   |   false|
+|  placeholder |   String to specify a short hint that describes the expected value when you make a selection| False   |   |
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  change |  Event triggered when checkbox changes its value |
+|  input |  Event triggered when checkbox changes its value |
+
+Note: You can use v-model with this component.
+
+### Textarea
+Component to show a textarea
+
+**Usage**
+```html
+...
+<m-textarea v-model="value" />
+...
+```
+
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  value |   String or number to indicate the textarea value | False   |   |
+|  disabled |   Boolean to indicate when the textarea is disable | False   |  false |
+|  form |  String to indicate the name of the form to which it belongs | False   |   |
+|  maxlength |  String or integer number to specify the maximum number of characters allowed on textarea | False   |   |
+|  name |   String to specify the name of the input | False   |   |
+|  placeholder |   String to specify a short hint that describes the expected value of the textarea| False   |   |
+|  autofocus |   Boolean to indicate when the input is focused from the begining | False   |   |
+|  rows |  String or integer number of rows for the texte area| False   |   |
+|  cols |  String or integer number of columns for the texte area| False   |   |
+|  invalid |   Boolean value that indicates when the control value is invalid or required. Put a red border around input | False   |   |
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  blur |  Event triggered when textarea lost focus |
+|  change |  Event triggered when textarea changes its value |
+|  focus |  Event triggered when textarea got focus  |
+|  keydown |  Event triggered when you press a key down |
+|  keypress |  Event triggered when you press a key |
+|  keyup |  Event triggered when you release a key |
+|  click |  Event triggered when you click on textarea |
+|  input |  Event triggered when textarea value changes |
+
+Note: You can use v-model with this component.
+
 ## Modals
+
+### Loading
+Component to show a little loading modal over the main screen. It has a slot to put other components inside it.
+
+**Usage**
+```html
+...
+<m-loading :show="show">
+...
+</m-loading>
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  show |   Boolean value to indicate when to show the loading modal | False   |  false |
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+
+### Modal
+Component to show a modal window over main screen.
+
+**Usage**
+```html
+...
+<m-modal v-model="show">
+...
+</m-modal>
+...
+```
+**Props**
+
+|  Name | Description   | Required   | Default   |
+| ------------ | ------------ | ------------ | ------------ |
+|  value |   Boolean value to indicate when to show the modal | False   | false  |
+
+Note: You can use v-model with this component.
+
+**Slots**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  Default |  Slot by default |
+|  header |  Slot to customize the modal header|
+
+**Events**
+
+|  Name | Description   |
+| ------------ | ------------ |
+|  input |  Event triggered when click on close button|
 
 ## ProgressBar
 
@@ -500,10 +926,6 @@ Component to show a tooltip when pass over a HTML element or component
 | ------------ | ------------ |
 |  Default |  Slot by default |
 
-## Author
-
-This library is created by [Aarón Montes](https://github.com/ajomuch92 "Aarón Montes"). **Support me to improve and maintain this library. My first month goal is only $50:**
-<a href="https://www.buymeacoffee.com/ajomuch92" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## License
 MIT
