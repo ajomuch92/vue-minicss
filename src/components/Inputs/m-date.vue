@@ -1,10 +1,10 @@
 <template>
   <input
-    v-model="currentValue"
-    v-bind="$props"
+    ref="input"
+    v-bind="validProps"
     :class="{'invalid': invalid}"
     @blur="onBlurHandler"
-    @change="onChangeHandler"
+    @change="onDateChangeHandler"
     @focus="onFocusHandler"
     @keydown="onKeyDownHandler"
     @keypress="onKeyPressHandler"
@@ -13,19 +13,20 @@
 
 <script>
 import MixinEventsText from '../../mixins/mixin-events-text';
+import formatter from '../../utils/date';
 
 export default {
-  name: 'm-input',
+  name: 'm-date',
   props: {
     value: {
-      type: [String, Number],
-      default: ''
+      type: Date,
+      default: null
     },
     type: {
       type: String,
       default: 'text',
       validator: (value) => {
-        return ['date', 'datetime-local', 'month', 'time', 'week'].indexOf(value) !== -1
+        return ['date', 'datetime-local'].indexOf(value) !== -1
       }
     },
     disabled: {
@@ -36,22 +37,6 @@ export default {
       type: String,
       default: null
     },
-    max: {
-      type: [String, Number],
-      default: null
-    },
-    maxlength: {
-      type: [String, Number],
-      default: null
-    },
-    min: {
-      type: [String, Number],
-      default: null
-    },
-    minlength: {
-      type: [String, Number],
-      default: null
-    },
     name: {
       type: String,
       default: null
@@ -60,17 +45,9 @@ export default {
       type: RegExp,
       default: null
     },
-    placeholder: {
-      type: String,
-      default: null
-    },
     readonly: {
       type: Boolean,
       default: false,
-    },
-    step: {
-      type: [String, Number],
-      default: null
     },
     invalid: {
       type: Boolean,
@@ -78,24 +55,44 @@ export default {
     }
   },
   mixins: [MixinEventsText],
-  data: () => ({
-    currentValue: null
-  }),
-  created() {
-    this.currentValue = this.value;
+  computed: {
+    validProps() {
+      return {
+        type: this.type,
+        disabled: this.disabled,
+        form: this.form,
+        name: this.name,
+        pattern: this.pattern,
+        readonly: this.readonly
+      }
+    }
+  },
+  mounted() {
+    this.setDate();
   },
   watch: {
-    currentValue() {
-      this.$emit('input', this.currentValue);
-    },
     value() {
-      this.currentValue = this.value;
+      this.setDate();
     }
+  },
+  methods: {
+    setDate() {
+      let value = '';
+      if(this.type == 'date')
+        value = formatter.yyyyMMdd(this.value);
+      else if(this.type == 'datetime-local')
+        value = formatter.dateTimeLocal(this.value);
+      this.$refs.input.value = value;
+    },
+    onDateChangeHandler(e) {
+      this.$emit('change', e);
+      this.$emit('input', new Date(e.target.value));
+    },
   }
 }
 </script>
 
-<style lang="scss">
+<style scoped>
   .invalid {
     border-color: var(--input-invalid-color);
     box-shadow: none;
