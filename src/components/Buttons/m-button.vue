@@ -106,6 +106,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  button:focus {
+    outline: none;
+  }
   .m-button {
     transition: all 0.5s;
   }
