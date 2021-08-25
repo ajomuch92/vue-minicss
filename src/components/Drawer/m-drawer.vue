@@ -4,7 +4,9 @@
     <input type="checkbox" :id="id" class="drawer" :class="{'persistent': persistent}">
     <div>
       <label :for="id" class="drawer-close"></label>
-      <slot name="default"/>
+      <div class="m-drawer-body">
+        <slot name="default"/>
+      </div>
     </div>
   </span>
 </template>
@@ -25,6 +27,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  .m-drawer-body {
+    padding: 10px;
+  }
 </style>
