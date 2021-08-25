@@ -34,6 +34,9 @@ import MTable from './components/Table/m-table.vue';
 import MTabs from './components/Tabs/m-tabs.vue';
 import mToast from './components/Toast/m-toast.vue';
 import mTooltip from './components/Tooltip/m-tooltip.vue';
+import mCountDown from './components/Countdown/m-countdown.vue';
+import mFullPage from './components/Layout/m-fullpage-template.vue'
+import mSlider from './components/Slider/m-slider.vue'
 
 export default {
   install(Vue) {
@@ -71,5 +74,8 @@ export default {
     Vue.component('m-tabs', MTabs);
     Vue.component('m-toast', mToast);
     Vue.component('m-tooltip', mTooltip);
+    Vue.component('m-countdown', mCountDown);
+    Vue.component('m-fullpage', mFullPage);
+    Vue.component('m-slider', mSlider);
   }
 }
