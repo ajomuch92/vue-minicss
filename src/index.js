@@ -38,6 +38,8 @@ import mCountDown from './components/Countdown/m-countdown.vue';
 import mFullPage from './components/Layout/m-fullpage-template.vue'
 import mSlider from './components/Slider/m-slider.vue'
 
+import size from './utils/screen-size'
+
 export default {
   install(Vue) {
     Vue.component('m-accordion', MAccordion);
@@ -77,5 +79,6 @@ export default {
     Vue.component('m-countdown', mCountDown);
     Vue.component('m-fullpage', mFullPage);
     Vue.component('m-slider', mSlider);
+    Vue.prototype.$size = size;
   }
 }

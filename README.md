@@ -1,7 +1,7 @@
 # Vue Minicss
 ![alt Vue Minicss Logo](https://i.ibb.co/bgjC8Tf/Grupo-1.png)
 ## A components progressive library base on [minicss.org](https://minicss.org/) for Vuejs. 
-The demo is coming. And best components and features could come. Feel free to make a pull request or let me know when you find a bug.
+The documentation and examples are being building. Best and new components and features are coming. Feel free to make a pull request.
 
 ## Author
 
