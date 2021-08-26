@@ -6525,6 +6525,13 @@ var update = add("588b1b87", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
+/***/ "8bbf":
+/***/ (function(module, exports) {
+
+module.exports = require("vue");
+
+/***/ }),
+
 /***/ "8f2b":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12586,7 +12593,63 @@ var m_slider_component = normalizeComponent(
 )
 
 /* harmony default export */ var m_slider = (m_slider_component.exports);
+// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
+var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
+
+// CONCATENATED MODULE: ./src/utils/screen-size.js
+
+var size = external_commonjs_vue_commonjs2_vue_root_Vue_default.a.observable({
+  height: 0,
+  width: 0,
+  isExtraSmall: false,
+  isSmall: false,
+  isMedium: false,
+  isLarge: false,
+  isExtraLarge: false
+});
+var resizeObserver;
+/* harmony default export */ var screen_size = ({
+  width: function width() {
+    return size.width;
+  },
+  height: function height() {
+    return size.height;
+  },
+  isExtraSmall: function isExtraSmall() {
+    return size.isExtraSmall;
+  },
+  isSmall: function isSmall() {
+    return size.isSmall;
+  },
+  isMedium: function isMedium() {
+    return size.isMedium;
+  },
+  isLarge: function isLarge() {
+    return size.isLarge;
+  },
+  isExtraLarge: function isExtraLarge() {
+    return size.isExtraLarge;
+  }
+});
+window.addEventListener('DOMContentLoaded', function () {
+  resizeObserver = new ResizeObserver(function () {
+    size.width = window.innerWidth;
+    size.height = window.innerHeight;
+    size.isExtraSmall = size.width < 600;
+    size.isSmall = size.width >= 600 && size.width < 960;
+    size.isMedium = size.width >= 960 && size.width < 1264;
+    size.isLarge = size.width >= 1264 && size.width < 1904;
+    size.isExtraLarge = size.width >= 1904;
+  });
+  resizeObserver.observe(document.body);
+});
+
+window.onbeforeunload = function () {
+  resizeObserver.unobserve();
+};
 // CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -12664,6 +12727,7 @@ var m_slider_component = normalizeComponent(
     Vue.component('m-countdown', m_countdown);
     Vue.component('m-fullpage', m_fullpage_template);
     Vue.component('m-slider', m_slider);
+    Vue.prototype.$size = screen_size;
   }
 });
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
